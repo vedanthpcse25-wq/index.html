@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<style>
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">My_Shop.</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Clothes</a></li>
+            <li><a class="dropdown-item" href="#">Shoes</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active">Shop</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="row g-4 mt-2">
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="t-shirt img.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">T-Shirt</h5>
+          <p class="fw-bold text-success">$990</p>
+          <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modal1">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="card shadow-sm">
+        <img src="shoes img.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Shoes</h5>
+          <p class="fw-bold text-success">$1499</p>
+          <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modal1">View</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4">
+      <div class="card shadow-sm">
+        <img src="headimg.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Headphones</h5>
+          <p class="fw-bold text-success">$9999</p>
+          <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#modal1">View</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modal1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Product Details</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>This product is high quality and best for daily use.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success">Add to Cart</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="mb-3">Order Form</h4>
+
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Full Name">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control mb-3" placeholder="Email">
+          </div>
+        </div>
+
+        <input type="text" class="form-control mb-3" placeholder="Address">
+
+        <select class="form-select mb-3">
+          <option>Select Product</option>
+          <option>T-Shirt</option>
+          <option>Shoes</option>
+          <option>Headphones</option>
+        </select>
+
+        <textarea class="form-control mb-3" placeholder="Message"></textarea>
+
+        <button class="btn btn-primary w-100">Place Order</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
