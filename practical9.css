@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: rgb(209, 225, 242);
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.box {
+    background: rgb(23, 181, 238);
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #667eea;
+}
+
+.box:hover {
+    transform: scale(1.1) rotate(2deg);
+    background: #ffcc70;
+}
+.box {
+    animation: fadeIn 1s ease-in;
+}
+.text-section {
+    padding: 20px;
+}
+.box i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #00f2fe;   /* Bright color so icon dikhe */
+}
+.text-section p {
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+}
